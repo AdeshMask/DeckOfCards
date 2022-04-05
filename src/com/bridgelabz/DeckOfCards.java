@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class DeckOfCards {
 
     public static ArrayList<String> list = new ArrayList<>();
-    public static final int TOTAL_CARDS = 52;
+
     Scanner scanner =  new Scanner(System.in);
     public static Random random = new Random();
 
@@ -17,6 +17,10 @@ public class DeckOfCards {
         System.out.println("Welcome to Deck of Cards game:");
         playerClass.multiPlayer();
         playerClass.getCard();
+
         playerClass.shuffle();
+        //System.out.println(list);
+        System.out.println("\nDistributing the cards:");
+        playerClass.distribute();
     }
 }
